@@ -13,8 +13,7 @@ orgid_url = 'http://www.cninfo.com.cn/new/data/szse_stock.json'
 url = 'http://www.cninfo.com.cn/new/hisAnnouncement/query'
 DETAIL_URL = 'http://static.cninfo.com.cn/'
 
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s: %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
 
 
 def get_orgid():
