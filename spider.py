@@ -58,7 +58,7 @@ def get_pdf_url(page, data):
         dats = an.get('announcements')
         stock_list = []
         for dat in dats:
-            if re.search('摘要', dat['announcementTitle']) or re.search('已取消', dat['announcementTitle']):
+            if re.search('摘要|已取消', dat['announcementTitle']):
                 continue
             elif re.search('招股说明书|年度报告', dat['announcementTitle']):
                 stock_list.append({
